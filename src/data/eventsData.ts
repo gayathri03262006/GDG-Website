@@ -29,10 +29,10 @@ export const events: Event[] = [
   },
   {
     id: '2',
-    title: 'Web Development Bootcamp',
+    title: 'Build-A Thon 2K25',
     description: 'Master modern web development with React, Node.js, and cloud deployment.',
     fullDescription: 'A comprehensive bootcamp covering modern web development technologies including React.js, Node.js, Express, MongoDB, and cloud deployment strategies. Perfect for beginners and intermediate developers looking to enhance their skills.',
-    date: '2025-03-10',
+    date: '2022-01-24',
     time: '09:00 AM',
     venue: 'Nalanda Auditorium, VBIT',
     image: 'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800',
