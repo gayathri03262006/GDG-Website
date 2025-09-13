@@ -60,7 +60,7 @@ const HomePage: React.FC = () => {
           height: "calc(100vh - 64px)",
         }}
       >
-        <div className="max-w-7xl mt-10 mb-96 mx-auto w-full flex flex-col md:flex-row items-center px-6 md:px-12">
+        <div className="max-w-7xl mt-10 mb-96 md:mt-0 md:mb-0 mx-auto w-full flex flex-col md:flex-row items-center px-6 md:px-12">
           <div className="text-left md:mb-0">
             <h1 className="font-heading text-[#132465] dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight pr-3 ">
               Empowering Developers, Inspiring Innovation
