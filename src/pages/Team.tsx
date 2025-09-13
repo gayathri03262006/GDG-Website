@@ -19,7 +19,7 @@ const Team: React.FC = () => {
       <HeroSection
         title="Team"
         subtitle="Meet the amazing individuals who make GDG VBIT a thriving community of innovation and learning."
-        backgroundImage="/team_hero.svg"
+        backgroundImage="/team.png"
       />
 
       {/* Page Heading */}
