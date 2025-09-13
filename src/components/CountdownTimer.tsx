@@ -88,7 +88,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
       </div>
 
       {/* 👇 Event Date in dd/mm/yyyy */}
-      <p className="mt-4 text-lg font-medium text-gray-700 dark:text-gray-300">
+      <p className="mt-4 text-lg font-medium dark:text-gray-300">
         Event Date: {formattedDate}
       </p>
     </div>

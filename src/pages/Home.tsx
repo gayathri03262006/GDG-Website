@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { color, motion } from "framer-motion";
-import { Calendar, Users, Code, ArrowRight, Lightbulb, icons } from "lucide-react";
+import {
+  Calendar,
+  Users,
+  Code,
+  ArrowRight,
+  Lightbulb,
+  icons,
+} from "lucide-react";
 import CountdownTimer from "../components/CountdownTimer";
 import { events } from "../data/eventsData"; // <-- Import events data
 
@@ -13,7 +20,6 @@ const HomePage: React.FC = () => {
       description:
         "Hands-on sessions covering the latest technologies and frameworks.",
       color: "#EA4335",
-      
     },
     {
       icon: Users,
@@ -34,7 +40,7 @@ const HomePage: React.FC = () => {
       title: "Regular Events",
       description:
         "Consistent learning opportunities through our event calendar.",
-      color: "#FBBC05"
+      color: "#FBBC05",
     },
   ];
 
@@ -79,7 +85,7 @@ const HomePage: React.FC = () => {
             className="text-center px-4 md:px-0"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              What is Google Developer Group?
+              What is Google Developers Group?
             </h2>
             <p className="font-body text-lg text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
               Google Developer Groups (GDGs) are community-driven organizations
@@ -131,7 +137,7 @@ const HomePage: React.FC = () => {
                     }}
                     viewport={{ once: true }}
                     className="relative border-[5px] border-yellow-500 rounded-[25%] sm:rounded-3xl md:rounded-full p-8 shadow-lg "
-                    style={{borderColor: feature.color}}
+                    style={{ borderColor: feature.color }}
                   >
                     {/* Two Column Layout inside card */}
                     <div className="grid grid-cols-[70%_30%] gap-8 max-w-7xl mx-auto">
@@ -147,10 +153,12 @@ const HomePage: React.FC = () => {
 
                       {/* Right: Icon placeholder */}
                       {/* Circle with Icon */}
-      <div className="w-16 h-16 border-4 rounded-full flex items-center justify-center mb-4">
-        {React.createElement(feature.icon, { size: 32, color: feature.color })}
-      </div>
-
+                      <div className="w-16 h-16 border-4 rounded-full flex items-center justify-center mb-4">
+                        {React.createElement(feature.icon, {
+                          size: 32,
+                          color: feature.color,
+                        })}
+                      </div>
                     </div>
                   </motion.div>
                 );
