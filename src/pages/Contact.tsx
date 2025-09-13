@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin } from "lucide-react";
+import { Instagram, Mail, MapPin } from "lucide-react";
+
 import HeroSection from "../components/HeroSection";
 
 const Contact: React.FC = () => {
@@ -16,6 +17,13 @@ const Contact: React.FC = () => {
       title: "Address",
       info: "Vignana Bharathi Institute of Technology",
       link: "#",
+    },
+  ];
+  const socialLinks = [
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://instagram.com/gdg_vbit",
     },
   ];
 
@@ -84,8 +92,23 @@ const Contact: React.FC = () => {
                   Follow Us
                 </h3>
                 <div className="flex space-x-4">
-                  
-                </div>
+                              {socialLinks.map((social) => {
+                                const IconComponent = social.icon;
+                                return (
+                                  <motion.a
+                                    key={social.name}
+                                    href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="hover:font-bold transition-colors duration-200"
+                                  >
+                                    <IconComponent className="h-5 w-5" />
+                                  </motion.a>
+                                );
+                              })}
+                            </div>
               </div>
             </motion.div>
 
