@@ -106,7 +106,10 @@ const HomePage: React.FC = () => {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </motion.div>
+        </div>
+      </section>
 
+      <section className=" bg-gray-50 dark:bg-gray-900">
           {/* Features Section Container */}
           <div className="py-16">
             {/* Section Title */}
@@ -164,7 +167,6 @@ const HomePage: React.FC = () => {
                 );
               })}
             </div>
-          </div>
         </div>
       </section>
 

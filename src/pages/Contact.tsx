@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
       <HeroSection
         title="Contact Us"
         subtitle="Get in touch with us for collaborations, queries, or to join our amazing community."
-        backgroundImage="/about_us_hero.svg"
+        backgroundImage="/about.png"
       />
 
       <section className="py-16 px-4">
