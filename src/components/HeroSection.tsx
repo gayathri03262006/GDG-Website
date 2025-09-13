@@ -25,7 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:mx-20 md:text-6xl font-bold mb-6 text-gray-900 dark:text-white"
+          className="text-4xl md:mx-20 md:text-6xl font-bold mb-6 text-gray-900"
         >
           {title}
         </motion.h1>
@@ -33,7 +33,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:mx-20 md:text-2xl mb-8 max-w-3xl leading-relaxed text-gray-700 dark:text-gray-300"
+          className="text-xl md:mx-20 md:text-2xl mb-8 max-w-3xl leading-relaxed text-gray-700 "
         >
           {subtitle}
         </motion.p>
