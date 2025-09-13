@@ -35,7 +35,7 @@ export const events: Event[] = [
     date: '2022-01-24',
     time: '09:00 AM',
     venue: 'Nalanda Auditorium, VBIT',
-    image: 'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/eventImages/buildathon2k25.png',
     type: 'past',
     speakers: ['Rahul JavaScript Expert', 'Sarah React Developer'],
     registrationLink: 'https://forms.google.com'

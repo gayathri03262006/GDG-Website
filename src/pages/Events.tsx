@@ -26,21 +26,22 @@ const Events: React.FC = () => {
   <motion.div
     initial={{ y: 50, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.8, delay: index * 0.1 }}
+    transition={{ duration: 0.5, delay: index * 0.1 }}
     viewport={{ once: true }}
-    className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden cursor-pointer max-w-md mx-auto md:max-w-2xl"
+    className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden cursor-pointer max-w-sm sm:max-w-md md:max-w-lg mx-auto"
     onClick={() => handleEventClick(event)}
   >
     {/* Event Image */}
-    <img
-      src={event.image}
-      alt={event.title}
-      className="w-full h-56 md:h-64 object-cover"
-    />
+    <div className="w-full aspect-[210/297]"> {/* A4 ratio */}
+      <img
+        src={event.image}
+        alt={event.title}
+        className="w-full h-full object-cover"
+      />
+    </div>
 
     {/* Event Content */}
     <div className="p-6 flex flex-col">
-      
       {/* Date & Time */}
       <div className="flex flex-wrap items-center space-x-4 text-sm text-gray-500 dark:text-gray-400 mb-3">
         <div className="flex items-center mb-1 md:mb-0">
@@ -54,7 +55,7 @@ const Events: React.FC = () => {
       </div>
 
       {/* Event Title */}
-      <h3 className="font-heading font-bold text-xl md:text-2xl text-gray-900 dark:text-white mb-3">
+      <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-gray-900 dark:text-white mb-3">
         {event.title}
       </h3>
 
@@ -94,7 +95,6 @@ const Events: React.FC = () => {
           </div>
         </div>
       )}
-
     </div>
   </motion.div>
 );
